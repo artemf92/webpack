@@ -40,7 +40,9 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.6",
     "focus-visible": "^5.2.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "postcss-loader": "^6.1.0"
   }
 }

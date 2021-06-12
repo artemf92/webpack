@@ -8,6 +8,7 @@ const TerserWebpackPlugin = require('terser-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack');
 const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const HTMLPartialsWebpackPlugin = require('html-webpack-partials-plugin');
+const autoprefixer = require('autoprefixer');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -138,6 +139,19 @@ module.exports = {
             }
           },
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  autoprefixer({
+                    browsers:['ie >= 8', 'last 4 version']
+                  })
+                ]
+              },
+              sourceMap: true
+            }
+          },
           'sass-loader'
         ],
       },
