@@ -1,0 +1,23 @@
+.gallery {
+  &__inner {
+    position: relative;
+  }
+  &__arrows {
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__img {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+}

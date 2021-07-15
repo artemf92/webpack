@@ -1,0 +1,61 @@
+.lessons {
+  margin-bottom: 95px;
+  &__title {
+    margin-bottom: 65px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+  &__content {
+    max-width: 690px;
+    flex: 0 0 50%;
+  }
+  &__media {
+    max-width: 690px;
+    flex: 0 0 50%;
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+
+    img {
+      border-radius: var(--border-radius);
+      overflow: hidden;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 42px;
+    margin-bottom: 23px;
+    p {
+      margin: 0;
+    }
+  }
+  &__link {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  &__socials {
+    float: right;
+  }
+  &__socials-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-right: 13px;
+  }
+  &__socials-link {
+    svg {
+      width: 15px;
+      height: 15px;
+      fill: var(--color-main);
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
