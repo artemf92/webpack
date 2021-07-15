@@ -1,0 +1,91 @@
+.teachers {
+  margin-bottom: 95px;
+  &__title {
+    margin-bottom: 65px;
+  }
+  &__inner {
+    position: relative;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+  }
+  &__card {
+    padding: 77px 98px 58px 17%;
+    width: 100%;
+    max-width: 958px;
+    margin-top: 53px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    background-image: url(../img/teachers-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__lastname {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    margin: 0;
+  }
+  &__firstname {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  &__job,
+  &__exp {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  &__exp {
+    margin-bottom: 50px;
+  }
+  &__description {
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 35px;
+
+    .highlight {
+      color: var(--color-main);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 90px;
+      height: 2px;
+      background-color: var(--color-main);
+    }
+  }
+  &__link {
+    display: block;
+    margin-top: -48px;
+    color: var(--color-main);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 34px;
+    text-decoration: underline;
+  }
+  &__arrows {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

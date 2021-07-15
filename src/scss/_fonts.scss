@@ -1,1 +1,7 @@
-@include font-face("notosans", "notosans", 400);
+@include font-face("Roboto", "Roboto-Light", 300);
+@include font-face("Roboto", "Roboto-Regular", 400);
+@include font-face("Roboto", "Roboto-Medium", 500);
+@include font-face("Roboto", "Roboto-Bold", 700);
+@include font-face("Rubik", "rubik_bold", 700);
+
+@include font-face-italic("Roboto", "Roboto-Italic", 400);

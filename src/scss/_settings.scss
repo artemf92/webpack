@@ -11,9 +11,66 @@ html {
 body {
   overflow-anchor: none;
   overflow-x: hidden;
-  font-family: "asd", sans-serif;
-  background-color: var(--color-white);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-bg);
   scroll-behavior: smooth;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px;
+}
+
+h1 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+ul, ol {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+table thead {
+  background: var(--color-main);
+  border: 1px solid rgba(198, 27, 33, 0.22);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 10px 10px 0px 0px;
+  color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+  background: var(--color-bg);
+  border: 1px solid #EFEFEF;
+}
+
+a {
+  color: var(--color-main);
+  transition: var(--main-transition);
 }
 
 img {
@@ -51,9 +108,61 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.carousel-arrows {
+  &__container {
+    display: flex;
+    &.disabled {
+      .carousel-arrows__item {
+        background-color: #f3f3f3;
+        cursor: none;
+        pointer-events: none;
+
+        svg {
+          fill: #787878;
+        }
+      }
+    }
+  }
+  &__item {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #E9E9E9;
+    transition: background-color var(--main-transition), fill var(--main-transition);
+    cursor: pointer;
+
+    svg {
+      width: 12px;
+      height: 8px;
+      fill: var(--color-main);
+    }
+    &--next {
+      margin-left: -1px;
+    }
+    &:hover {
+      background-color: var(--color-main);
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
 }

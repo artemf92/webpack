@@ -172,7 +172,7 @@ module.exports = {
                 return `./spritemap.svg`;
               }
 
-              return `public_path/${url}`;
+              return `../${url}`;
             },
           }
         }],

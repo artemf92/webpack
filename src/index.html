@@ -17,7 +17,125 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <header class="page-header">
+    <div class="container">
+      <a href="/" class="page-header__logo" aria-label="Логотип English & Spanish School" style="background-image: url('./img/logo.png');"></a>
+      <p class="page-header__locality">
+        <svg>
+          <use xlink:href="./spritemap.svg#sprite-local"></use>
+        </svg>
+        <span><strong>Калининград</strong>, Советский проспект 81, 2&nbsp;этаж, секция&nbsp;А, помещение &#8470;&nbsp;8, кабинет&nbsp;8</p></span>
+      <div class="page-header__contacts">
+        <a href="tel:+78005679800" class="page-header__phone">+7 800 567 98 00</a>
+        <a href="#" class="page-header__callback">Записаться в школу</a>
+      </div>
+    </div>
+    <div class="page-header__burger" aria-label="Меню">
+      <span class="page-header__burger-line"></span>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="hero" style="background-image: url(../img/hero-bg.png);">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">Языковая школа <br>в Калининграде</h1>
+          <p class="hero__text">Преподаем английский и испанский языки уже <span class="highlight">более 5 лет</span</p>
+          <ul class="hero__features list-reset">
+            <li class="hero__features-item">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-edu"></use>
+              </svg>
+              <span>Дипломированные преподаватели лингвисты с международными сертификатами</span>
+            </li>
+            <li class="hero__features-item">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-smart"></use>
+              </svg>
+              <span>Интерактивные смарт панели</span>
+            </li>
+            <li class="hero__features-item">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-books"></use>
+              </svg>
+              <span>Богатая учебная литература и топовые пособия ведущих английских и испанских издательств</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero__front-image">
+        <img src="./img/hero-front.png" alt="Языковая школа в Калининграде">
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title section-title">Какой язык вы будете изучать ?</h2>
+        <p class="products__subtitle">Лишь реплицированные с зарубежных источников, современные исследования набирают популярность среди определенных слоев населения, а значит, должны быть своевременно верифицированы. Лишь реплицированные с зарубежных источников, современные исследования ограничены исключительно образом мышления</p>
+        <ul class="products__list list-reset">
+          <li class="products__item">
+            <div class="products__top">
+              <div class="products__logo" style="background-image: url(./img/product1-bg.png);" aria-label="Английский язык"></div>
+              <div class="products__banner">
+                <img src="./img/product1.png" alt="Английский язык" class="product_image">
+                <span class="products__badge">Для детей</span>
+              </div>
+            </div>
+            <div class="products__bottom">
+              <h3 class="products__name">Английский язык</h3>
+              <p class="products__price">от 4 500 руб.</p>
+            </div>
+          </li>
+          <li class="products__item">
+            <div class="products__top">
+              <div class="products__logo" style="background-image: url(./img/product2-bg.png);" aria-label="Английский язык"></div>
+              <div class="products__banner">
+                <img src="./img/product1.png" alt="Испанский язык" class="product_image">
+                <span class="products__badge">Для взрослых</span>
+              </div>
+            </div>
+            <div class="products__bottom">
+              <h3 class="products__name">Испанский язык</h3>
+              <p class="products__price">от 10 500 руб.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="teachers">
+      <div class="container">
+        <h2 class="teachers__title section-title">Талантливые преподаватели</h2>
+        <div class="teachers__inner">
+          <ul class="teachers__list list-reset">
+            <li class="teachers__item">
+              <img src="./img/teach.png" alt="Ткач Дина Игоревна" class="teachers__photo">
+              <div class="teachers__card">
+                <h3 class="teachers__lastname">Ткач</h3>
+                <p class="teachers__firstname">Дина Игоревна</p>
+                <span class="teachers__job">Директор, преподаватель английского и испанского</span>
+                <span class="teachers__exp">Опыт работы — 5 лет</span>
+                <div class="teachers__description"><span class="highlight">“</span> Разнообразный и богатый опыт говорит нам, что современная методология разработки позволяет выполнить важные задания по разработке первоочередных требований. Идейные соображения высшего порядка, а также сложившаяся структура организации создаёт предпосылки для первоочередных требований. Внезапно, действия представителей оппозиции лишь добавляют фракционных разногласий и ассоциативно распределены по отраслям. <span class="highlight">“</span></div>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="teachers__link">Посмотреть всех преподавателей</a>
+          <div class="teachers__arrows carousel-arrows__container">
+            <div class="teachers__arrows--prev carousel-arrows__item carousel-arrows__item--prev" aria-label="Предыдущий слайд">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-ar-prev"></use>
+              </svg>
+            </div>
+            <div class="teachers__arrows--next carousel-arrows__item carousel-arrows__item--next" aria-label="Следующий слайд">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-ar-next"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <!--  <partial></partial>  -->
 </body>
 </html>

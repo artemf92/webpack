@@ -1,0 +1,106 @@
+.page-header {
+  padding: 27px 0;
+  background-color: var(--color-white);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: inline-block;
+    width: 340px;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //background-image: url('../img/logo.png');
+  }
+  &__locality {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 325px;
+    margin: 0;
+    line-height: 21px;
+    //padding-left: 33px;
+    svg {
+      display: inline-block;
+      fill: var(--color-main);
+      width: 26px;
+      height: 20px;
+      margin-right: 16px;
+    }
+  }
+  &__contacts {
+    a {
+      display: block;
+    }
+  }
+  &__phone {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    transition: color var(--main-transition);
+    margin-bottom: 4px;
+    &:hover {
+      color: var(--color-black-hover);
+    }
+  }
+  &__callback {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: right;
+    transition: color var(--main-transition);
+    color: var(--color-main);
+    text-decoration: underline;
+    &:hover {
+      color: var(--color-main-hover);
+    }
+  }
+  &__burger {
+    position: absolute;
+    top: 57px;
+    right: 43px;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    &-line {
+      width: 30px;
+      height: 2px;
+      background-color: var(--color-main);
+      transition: width var(--main-transition);
+    }
+    &:before {
+      display: block;
+      content: '';
+      width: 100%;
+    }
+    &:after {
+      display: block;
+      content: '';
+      width: 22px;
+    }
+    &:before,
+    &:after {
+      height: 2px;
+      background-color: var(--color-main);
+      transition: width var(--main-transition);
+    }
+
+    &:hover {
+      .page-header__burger-line {
+        width: 100%;
+      }
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
