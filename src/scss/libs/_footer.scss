@@ -1,0 +1,143 @@
+.page-footer {
+  background-color: #f5f5f5;
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    padding: 32px 0 22px;
+    border-bottom: 1px solid #DCDCDC;
+  }
+  &__logo {
+    grid-column: 3 span;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 210px;
+    height: 49px;
+    mix-blend-mode: multiply;
+  }
+  &__nav {
+    grid-column: 6 span;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__nav-item {
+    color: var(--color-main);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    text-decoration: underline;
+    transition: var(--main-transition);
+
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+  &__phone {
+    grid-column: 3 span;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: right;
+    line-height: 29px;
+    transition: color var(--main-transition);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-black-hover);
+    }
+  }
+  &__middle {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    padding: 30px 0;
+    border-bottom: 1px solid #DCDCDC;
+  }
+  &__middle-left {
+    grid-column: 3 span;
+  }
+  &__socials-link {
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &__middle-center {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 6 span;
+  }
+  &__middle-right {
+    grid-column: 3 span;
+    text-align: right;
+  }
+  &__menu {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--color-main);
+  }
+  &__menu-title {
+    margin: 0 0 14px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  &__email {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: var(--color-main);
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 35px;
+  }
+  &__adr {
+    margin-left: auto;
+    max-width: 210px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  &__adr-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+  }
+  address {
+    font-style: normal;
+    margin-bottom: 35px;
+  }
+  .worktime {
+    margin-left: auto;
+    max-width: 100px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 0;
+  }
+  &__copyright {
+    max-width: 930px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    color: #787878;
+  }
+}
+
+.footer-menu {
+  &__left {
+    grid-column: 3 span;
+  }
+  &__right {
+    grid-column: 3 span;
+  }
+}

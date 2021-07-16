@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'Rubik Bold';
-	src: url('../fonts/rubik_bold.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/rubik_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/rubik_bold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/rubik_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/rubik_bold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/rubik_bold.svg#rubik_bold') format('svg'); /* Chrome < 4, Legacy iOS */
-}

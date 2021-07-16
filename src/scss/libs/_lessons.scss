@@ -48,12 +48,6 @@
     margin-right: 13px;
   }
   &__socials-link {
-    svg {
-      width: 15px;
-      height: 15px;
-      fill: var(--color-main);
-    }
-
     &:not(:last-child) {
       margin-right: 10px;
     }

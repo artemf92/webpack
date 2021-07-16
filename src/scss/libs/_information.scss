@@ -1,0 +1,30 @@
+.information {
+  &__title {
+    margin-bottom: 44px;
+  }
+  &__description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 44px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 690px);
+    grid-gap: 30px;
+    margin-bottom: 102px;
+  }
+  &__item-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0 0 11px;
+  }
+  &__price {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+    color: var(--color-main);
+  }
+}

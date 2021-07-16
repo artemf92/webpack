@@ -156,6 +156,10 @@ module.exports = {
         ],
       },
       {
+        test: /custom.js/,
+        use: ['babel-loader'],
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
