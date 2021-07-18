@@ -9,3 +9,20 @@
     line-height: 35px;
   }
 }
+
+@media (max-width: 992px) {
+  .seo__title {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seo__content {
+    font-size: 13px;
+    line-height: 26px;
+  }
+  .seo__title {
+    margin-bottom: 24px;
+  }
+}
+

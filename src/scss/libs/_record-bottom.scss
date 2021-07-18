@@ -16,6 +16,9 @@
       margin: 0;
     }
   }
+  &__list {
+    padding-left: 15px;
+  }
   &__title {
     //font-family: 'Rubik', sans-serif;
     font-size: 30px;
@@ -73,5 +76,104 @@
     &:active {
       color: var(--color-main-hover);
     }
+  }
+  &__politics {
+    display: none;
+    visibility: hidden;
+
+    .highlight {
+      color: var(--color-black);
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .record-bottom__btns {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .record-bottom__title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .record-bottom__title span.highlight {
+    font-size: 28px;
+  }
+  .record-bottom__inner {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .record-bottom__btns {
+    max-width: 300px;
+  }
+  .record-bottom__btn {
+    padding: 13px 15px;
+  }
+  .record-bottom__btn svg {
+    left: 15px;
+  }
+  .record-bottom__title {
+    font-size: 21px;
+    line-height: 29px;
+    margin-bottom: 24px;
+  }
+  .record-bottom__title span.highlight {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .record-bottom {
+    margin-bottom: 40px;
+  }
+  .record-bottom__inner {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .record-bottom__content {
+    border-bottom: 1px solid #F79094;
+    margin-bottom: 23px;
+  }
+  .record-bottom__politics {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 480px) {
+  .record-bottom {
+    padding-bottom: 41px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/record-bottom-bg.png);
+  }
+  .record-bottom__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  .record-bottom__btn {
+    color: var(--color-main);
+    font-family: Rubik;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .record-bottom__title span.highlight {
+    font-size: 16px;
+  }
+  .record-bottom__list {
+    font-size: 14px;
+  }
+  .record-bottom__politics {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 15px;
   }
 }

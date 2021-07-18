@@ -26,8 +26,16 @@
         </svg>
         <span><strong>Калининград</strong>, Советский проспект 81, 2&nbsp;этаж, секция&nbsp;А, помещение &#8470;&nbsp;8, кабинет&nbsp;8</p></span>
       <div class="page-header__contacts">
-        <a href="tel:+78005679800" class="page-header__phone">+7 800 567 98 00</a>
-        <a href="#" class="page-header__callback">Записаться в школу</a>
+        <a href="tel:+78005679800" class="page-header__phone">
+          <span class="page-header__text">+7 800 567 98 00</span>
+          <svg>
+            <use xlink:href="./spritemap.svg#sprite-phone"></use>
+          </svg>
+        </a>
+        <a href="#" class="page-header__callback">
+          <span class="page-header__callback--xl">Записаться в школу</span>
+          <span class="page-header__callback--md">Записаться</span>
+        </a>
       </div>
       <div class="page-header__burger" aria-label="Меню">
         <span class="page-header__burger-line"></span>
@@ -74,28 +82,38 @@
           <p class="hero__text">Преподаем английский и испанский языки уже <span class="highlight">более 5 лет</span</p>
           <ul class="hero__features list-reset">
             <li class="hero__features-item">
-              <svg>
-                <use xlink:href="./spritemap.svg#sprite-edu"></use>
-              </svg>
+              <span class="icon">
+                <svg>
+                  <use xlink:href="./spritemap.svg#sprite-edu"></use>
+                </svg>
+              </span>
               <span>Дипломированные преподаватели лингвисты с международными сертификатами</span>
             </li>
             <li class="hero__features-item">
-              <svg>
-                <use xlink:href="./spritemap.svg#sprite-smart"></use>
-              </svg>
+              <span class="icon">
+                <svg>
+                  <use xlink:href="./spritemap.svg#sprite-smart"></use>
+                </svg>
+              </span>
               <span>Интерактивные смарт панели</span>
             </li>
             <li class="hero__features-item">
-              <svg>
-                <use xlink:href="./spritemap.svg#sprite-books"></use>
-              </svg>
+              <span class="icon">
+                <svg>
+                  <use xlink:href="./spritemap.svg#sprite-books"></use>
+                </svg>
+              </span>
               <span>Богатая учебная литература и топовые пособия ведущих английских и испанских издательств</span>
             </li>
           </ul>
         </div>
       </div>
       <div class="hero__front-image">
-        <img src="./img/hero-front.png" alt="Языковая школа в Калининграде">
+        <div class="container">
+          <h2 class="hero__mobile-title">Обучение английскому и испанскому языку в Калининграде</h2>
+        </div>
+        <img class="hero__front-image--md" src="./img/hero-front.png" alt="Языковая школа в Калининграде">
+        <img class="hero__front-image--xs" src="./img/hero-front-mobile.png" alt="Языковая школа в Калининграде">
       </div>
     </section>
 
@@ -103,34 +121,34 @@
       <div class="container">
         <h2 class="products__title section-title">Какой язык вы будете изучать ?</h2>
         <p class="products__subtitle">Лишь реплицированные с зарубежных источников, современные исследования набирают популярность среди определенных слоев населения, а значит, должны быть своевременно верифицированы. Лишь реплицированные с зарубежных источников, современные исследования ограничены исключительно образом мышления</p>
-        <ul class="products__list list-reset">
-          <li class="products__item">
+        <div class="products__grid">
+          <div class="products__item">
             <div class="products__top">
-              <div class="products__logo" style="background-image: url(./img/product1-bg.png);" aria-label="Английский язык"></div>
-              <div class="products__banner">
-                <img src="./img/product1.png" alt="Английский язык" class="product_image">
-                <span class="products__badge">Для детей</span>
-              </div>
+              <a href="#" class="products__link" aria-label="Английский язык"></a>
             </div>
             <div class="products__bottom">
               <h3 class="products__name">Английский язык</h3>
               <p class="products__price">от 4 500 руб.</p>
             </div>
-          </li>
-          <li class="products__item">
+          </div>
+          <div class="products__item">
             <div class="products__top">
-              <div class="products__logo" style="background-image: url(./img/product2-bg.png);" aria-label="Английский язык"></div>
-              <div class="products__banner">
-                <img src="./img/product1.png" alt="Испанский язык" class="product_image">
-                <span class="products__badge">Для взрослых</span>
-              </div>
+              <a href="#" class="products__link" aria-label="Английский язык"></span></a>
             </div>
             <div class="products__bottom">
               <h3 class="products__name">Испанский язык</h3>
               <p class="products__price">от 10 500 руб.</p>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div class="products__banner">
+            <img src="./img/product1.png" alt="Английский язык" class="product_image">
+            <span class="products__badge">Для детей</span>
+          </div>
+          <div class="products__banner">
+            <img src="./img/product2.png" alt="Испанский язык" class="product_image">
+            <span class="products__badge">Для взрослых</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -167,11 +185,11 @@
       </div>
     </section>
 
-    <div class="record">
+    <!--<div class="record">
       <div class="container">
 
       </div>
-    </div>
+    </div>-->
 
     <section class="lessons">
       <div class="container">
@@ -230,7 +248,11 @@
             <li class="gallery-item"><img src="./img/gallery5.png" alt="" class="gallery__img"></li>
             <li class="gallery-item"><img src="./img/gallery6.png" alt="" class="gallery__img"></li>
           </ul>
-          <p class="gallery__description visible-xs">В процессе обучения всегда участвует команда, состоящая из преподавателя и ученика. Именно командный подход приносит наилучшие результаты</p>
+          <div class="gallery__description visible-xs">
+            <div class="container">
+              <p>В процессе обучения всегда участвует команда, состоящая из преподавателя и ученика. Именно командный подход приносит наилучшие результаты</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -238,7 +260,7 @@
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title section-title">Отзывы учеников</h2>
-        <ul class="reviews__list">
+        <ul class="reviews__list list-reset">
           <li class="reviews__item">
             <div class="reviews__img">
               <img src="./img/review1.png" alt="">
@@ -265,15 +287,22 @@
     <section class="information">
       <div class="container">
         <h2 class="information__title section-title">Узнайте подробнее о каждом направлении школы</h2>
-        <div class="information__description">
+        <div class="information__description information__description--xl">
           <p>Лишь реплицированные с зарубежных источников, современные исследования набирают популярность среди определенных слоев населения, а значит, должны быть своевременно верифицированы. Лишь реплицированные с зарубежных источников, современные исследования ограничены исключительно образом мышления</p>
         </div>
+        <div class="information__description information__description--xs">
+          <p>Разнообразный и богатый опыт говорит нам, что современная методология разработки позволяет выполнить важные задания по разработке первоочередных требований</p>
+        </div>
         <ul class="information__list list-reset">
-          <li class="information__item"><img src="./img/info1.png" alt="Английский язык" class="information__img">
+          <li class="information__item">
+            <a href="#" class="information__link"><img src="./img/info1.png" alt="Английский язык" class="information__img information__img--xl"></a>
+            <a href="#" class="information__link"><img src="./img/info1-mobile.png" alt="Английский язык" class="information__img information__img--xs"></a>
             <h3 class="information__item-title">Английский язык</h3>
             <p class="information__price">от 4 500 руб.</p>
           </li>
-          <li class="information__item"><img src="./img/info2.png" alt="Испанский язык" class="information__img">
+          <li class="information__item">
+            <a href="#" class="information__link"><img src="./img/info2.png" alt="Испанский язык" class="information__img information__img--xl"></a>
+            <a href="#" class="information__link"><img src="./img/info2-mobile.png" alt="Испанский язык" class="information__img information__img--xs"></a>
             <h3 class="information__item-title">Испанский язык</h3>
             <p class="information__price">от 10 500 руб.</p>
           </li>
@@ -286,7 +315,7 @@
         <div class="record-bottom__inner">
           <div class="record-bottom__content">
             <h3 class="record-bottom__title">Запишитесь на <span class="highlight">бесплатное</span> <br>пробное занятие с директором</h3>
-            <ul>
+            <ul class="record-bottom__list">
               <li>Познакомимся</li>
               <li>Определим уровень</li>
               <li>Покажем, как проходит урок</li>
@@ -305,6 +334,7 @@
               </svg>
               <span>Испанский язык</span>
             </a>
+            <p class="record-bottom__politics">Записываясь, вы подтверждаете что ознакомлены с <a href="#" class="highlight">политикой конфиденциальности</a> и согласны на обработку персональных данных</p>
           </div>
         </div>
       </div>
@@ -420,7 +450,7 @@
         </a>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <!--  <partial></partial>  -->
 </body>

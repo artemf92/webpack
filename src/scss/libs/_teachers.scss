@@ -89,3 +89,79 @@
     right: 0;
   }
 }
+
+@media (max-width: 1380px) {
+  .teachers__card {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .teachers__photo {
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .teachers__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .teachers__photo {
+    position: static;
+  }
+  .teachers__card {
+    padding: 40px;
+  }
+  .teachers__link {
+    margin: 15px auto 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .teachers__photo {
+    margin-bottom: 35px;
+  }
+  .teachers__card {
+    margin-top: 0;
+    background-color: var(--color-bg);
+    box-shadow: none;
+    background-size: contain;
+    background-position: 0 100%;
+    background-blend-mode: multiply;
+  }
+  .teachers__lastname,
+  .teachers__firstname {
+    display: inline-block;
+    font-family: 'Rubik';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .teachers__job, .teachers__exp {
+    color: #999999;
+  }
+  .teachers__description:before {
+    content: none;
+  }
+  .teachers__exp {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 570px) {
+  .teachers__photo {
+    max-width: 100%;
+  }
+  .teachers__card {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .teachers__card {
+    min-height: 520px;
+  }
+}

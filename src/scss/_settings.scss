@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  padding-top: 134px;
   overflow-anchor: none;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
@@ -113,8 +114,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1440px;
+  padding: 0 30px;
+  max-width: 1470px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -306,8 +307,34 @@ a {
   top: 0;
   width: 100%;
 }
+
 @media (min-width: 570px) {
   .visible-xs {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 86px;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 570px) {
+  .section-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 18px;
+    line-height: 27px;
   }
 }

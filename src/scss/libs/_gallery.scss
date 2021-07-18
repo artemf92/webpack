@@ -2,6 +2,14 @@
   &__inner {
     position: relative;
   }
+  &__description {
+    display: none;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
   &__arrows {
     justify-content: flex-end;
     margin-bottom: 30px;
@@ -19,5 +27,18 @@
   &__img {
     border-radius: var(--border-radius);
     overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery__description {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery__description {
+    font-size: 13px;
+    line-height: 20px;
   }
 }

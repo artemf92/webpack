@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -18,7 +19,7 @@ const filename = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}
 const optimization = () => {
   const configObj = {
     splitChunks: {
-      chunks: 'all'
+      chunks: 'all',
     }
   };
 
@@ -154,10 +155,6 @@ module.exports = {
           },
           'sass-loader'
         ],
-      },
-      {
-        test: /custom.js/,
-        use: ['babel-loader'],
       },
       {
         test: /\.js$/,

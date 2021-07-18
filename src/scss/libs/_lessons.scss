@@ -10,11 +10,12 @@
   }
   &__content {
     max-width: 690px;
-    flex: 0 0 50%;
+    width: calc(50% - 15px);
   }
   &__media {
+    height: 100%;
     max-width: 690px;
-    flex: 0 0 50%;
+    width: calc(50% - 15px);
     position: relative;
     border-radius: var(--border-radius);
     overflow: hidden;
@@ -51,5 +52,46 @@
     &:not(:last-child) {
       margin-right: 10px;
     }
+  }
+}
+
+@media (max-width: 1380px) {
+  .lessons__link {
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  .lessons__socials {
+    float: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .lessons__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .lessons__content {
+    width: 100%;
+    max-width: initial;
+  }
+  .lessons__media {
+    width: 100%;
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .lessons__wrapper {
+    display: none;
+    visibility: hidden;
+  }
+  .lessons__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lessons__title {
+    margin-bottom: 27px;
   }
 }

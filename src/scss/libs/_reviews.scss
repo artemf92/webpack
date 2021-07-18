@@ -65,3 +65,46 @@
     }
   }
 }
+
+@media (max-width: 1360px) {
+  .reviews__item {
+    align-items: center;
+  }
+  .reviews__content {
+    padding-left: 30px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reviews__item {
+    flex-direction: column;
+  }
+  .reviews__content {
+    padding-left: 0;
+    max-width: initial;
+  }
+  .reviews__link-wrapper {
+    margin-left: 0;
+  }
+  .reviews__features-item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 570px) {
+  .reviews__btn {
+    min-width: 157px;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews__body {
+    font-size: 11px;
+    line-height: 22px;
+  }
+}
