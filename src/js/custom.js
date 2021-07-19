@@ -166,4 +166,18 @@ $(document).ready(function() {
       nextArrow: $('.reviews__arrows--next'),
     })
   }
+  //
+  // function init() {
+  //   const myMap = new ymaps.Map('map', {
+  //       center: [54.72,20.49],
+  //       zoom: 10,
+  //       behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"]
+  //     });
+  //
+  //
+  // }
+  //
+  // ymaps.ready(init);
 })
+
+

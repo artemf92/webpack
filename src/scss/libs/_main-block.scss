@@ -1,0 +1,159 @@
+.main-block {
+  margin-bottom: 95px;
+  &__title {
+    margin-bottom: 65px;
+  }
+  &__inner {
+    position: relative;
+  }
+  &__item {
+    position: relative;
+    display: flex!important;
+    justify-content: flex-end;
+  }
+  &__card {
+    padding: 77px 98px 58px 17%;
+    width: 100%;
+    max-width: 958px;
+    margin-top: 53px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    background-image: url(../img/contacts-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  &__link {
+    display: block;
+    margin-top: -48px;
+    color: var(--color-main);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 34px;
+    text-decoration: underline;
+  }
+  .country {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .index {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .locality {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .street-address {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .extended-address {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .phone {
+    display: block;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 6px;
+  }
+  .link {
+    display: block;
+    margin-bottom: 60px;
+  }
+  &__socials-link {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+#YaMaps  {
+  width: 100%;
+  max-width: 570px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+@media (max-width: 1380px) {
+  .main-block__card {
+    max-width: 800px;
+  }
+}
+
+
+@media (max-width: 1240px) {
+  .page-contacts .main-block__item {
+    flex-direction: column-reverse;
+  }
+  .main-block__title {
+    margin-bottom: 40px;
+  }
+  .main-block__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-block__card {
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+  .main-block__link {
+    margin: 15px auto 0;
+    text-align: center;
+  }
+  #YaMaps {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-block__title {
+    margin-bottom: 30px;
+  }
+  .main-block__card {
+    margin-top: 0;
+    background-color: var(--color-bg);
+    box-shadow: none;
+    background-size: cover;
+    background-position: 0 100%;
+    background-blend-mode: multiply;
+  }
+}
+
+@media (max-width: 570px) {
+  .main-block__title {
+    margin-bottom: 20px;
+  }
+  .main-block__photo {
+    max-width: 100%;
+  }
+  .main-block__card {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-block__card {
+    min-height: 520px;
+  }
+}
