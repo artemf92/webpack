@@ -67,6 +67,13 @@ $(document).ready(function() {
     'speedOut'		:	200,
     'overlayShow'	:	false
   });
+  $(".main-block__link").fancybox({
+    'transitionIn'	:	'elastic',
+    'transitionOut'	:	'elastic',
+    'speedIn'		:	600,
+    'speedOut'		:	200,
+    'overlayShow'	:	false
+  });
   $("a[data-fancybox='modal']").fancybox({
     'transitionIn'	:	'elastic',
     'transitionOut'	:	'elastic',
