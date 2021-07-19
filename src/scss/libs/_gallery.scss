@@ -41,4 +41,18 @@
     font-size: 13px;
     line-height: 20px;
   }
+  .gallery__item {
+    img {
+      opacity: .3;
+      transition: opacity var(--main-transition);
+    }
+    &.slick-current {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+  .gallery__arrows {
+    display: none!important;
+  }
 }

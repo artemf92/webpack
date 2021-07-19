@@ -133,15 +133,13 @@ a {
 .carousel-arrows {
   &__container {
     display: flex;
-    &.disabled {
-      .carousel-arrows__item {
-        background-color: #f3f3f3;
-        cursor: none;
-        pointer-events: none;
+    .carousel-arrows__item.slick-disabled {
+      background-color: #f3f3f3;
+      cursor: none;
+      pointer-events: none;
 
-        svg {
-          fill: #787878;
-        }
+      svg {
+        fill: #787878;
       }
     }
   }

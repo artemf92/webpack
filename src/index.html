@@ -15,6 +15,8 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
   <header class="page-header">
@@ -80,32 +82,34 @@
         <div class="hero__content">
           <h1 class="hero__title">Языковая школа <br>в Калининграде</h1>
           <p class="hero__text">Преподаем английский и испанский языки уже <span class="highlight">более 5 лет</span</p>
-          <ul class="hero__features list-reset">
-            <li class="hero__features-item">
+          <div class="hero__features-container">
+            <div class="hero__features list-reset">
+              <div class="hero__features-item">
               <span class="icon">
                 <svg>
                   <use xlink:href="./spritemap.svg#sprite-edu"></use>
                 </svg>
               </span>
-              <span>Дипломированные преподаватели лингвисты с международными сертификатами</span>
-            </li>
-            <li class="hero__features-item">
+                <span>Дипломированные преподаватели лингвисты с международными сертификатами</span>
+              </div>
+              <div class="hero__features-item">
               <span class="icon">
                 <svg>
                   <use xlink:href="./spritemap.svg#sprite-smart"></use>
                 </svg>
               </span>
-              <span>Интерактивные смарт панели</span>
-            </li>
-            <li class="hero__features-item">
+                <span>Интерактивные смарт панели</span>
+              </div>
+              <div class="hero__features-item">
               <span class="icon">
                 <svg>
                   <use xlink:href="./spritemap.svg#sprite-books"></use>
                 </svg>
               </span>
-              <span>Богатая учебная литература и топовые пособия ведущих английских и испанских издательств</span>
-            </li>
-          </ul>
+                <span>Богатая учебная литература и топовые пособия ведущих английских и испанских издательств</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="hero__front-image">
@@ -141,11 +145,11 @@
             </div>
           </div>
           <div class="products__banner">
-            <img src="./img/product1.png" alt="Английский язык" class="product_image">
+            <a href="#"><img src="./img/product1.png" alt="Английский язык" class="product_image"></a>
             <span class="products__badge">Для детей</span>
           </div>
           <div class="products__banner">
-            <img src="./img/product2.png" alt="Испанский язык" class="product_image">
+            <a href="#"><img src="./img/product2.png" alt="Испанский язык" class="product_image"></a>
             <span class="products__badge">Для взрослых</span>
           </div>
         </div>
@@ -156,8 +160,8 @@
       <div class="container">
         <h2 class="teachers__title section-title">Талантливые преподаватели</h2>
         <div class="teachers__inner">
-          <ul class="teachers__list list-reset">
-            <li class="teachers__item">
+          <div class="teachers__list list-reset">
+            <div class="teachers__item">
               <img src="./img/teach.png" alt="Ткач Дина Игоревна" class="teachers__photo">
               <div class="teachers__card">
                 <h3 class="teachers__lastname">Ткач</h3>
@@ -166,8 +170,18 @@
                 <span class="teachers__exp">Опыт работы — 5 лет</span>
                 <div class="teachers__description"><span class="highlight">“</span> Разнообразный и богатый опыт говорит нам, что современная методология разработки позволяет выполнить важные задания по разработке первоочередных требований. Идейные соображения высшего порядка, а также сложившаяся структура организации создаёт предпосылки для первоочередных требований. Внезапно, действия представителей оппозиции лишь добавляют фракционных разногласий и ассоциативно распределены по отраслям. <span class="highlight">“</span></div>
               </div>
-            </li>
-          </ul>
+            </div>
+            <div class="teachers__item">
+              <img src="./img/teach.png" alt="Ткач Дина Игоревна" class="teachers__photo">
+              <div class="teachers__card">
+                <h3 class="teachers__lastname">Ткач</h3>
+                <p class="teachers__firstname">Дина Игоревна</p>
+                <span class="teachers__job">Директор, преподаватель английского и испанского</span>
+                <span class="teachers__exp">Опыт работы — 5 лет</span>
+                <div class="teachers__description"><span class="highlight">“</span> Разнообразный и богатый опыт говорит нам, что современная методология разработки позволяет выполнить важные задания по разработке первоочередных требований. Идейные соображения высшего порядка, а также сложившаяся структура организации создаёт предпосылки для первоочередных требований. Внезапно, действия представителей оппозиции лишь добавляют фракционных разногласий и ассоциативно распределены по отраслям. <span class="highlight">“</span></div>
+              </div>
+            </div>
+          </div>
           <a href="#" class="teachers__link">Посмотреть всех преподавателей</a>
           <div class="teachers__arrows carousel-arrows__container">
             <div class="teachers__arrows--prev carousel-arrows__item carousel-arrows__item--prev" aria-label="Предыдущий слайд">
@@ -240,14 +254,14 @@
               </div>
             </div>
           </div>
-          <ul class="gallery__list list-reset">
-            <li class="gallery-item"><img src="./img/gallery1.png" alt="" class="gallery__img"></li>
-            <li class="gallery-item"><img src="./img/gallery2.png" alt="" class="gallery__img"></li>
-            <li class="gallery-item"><img src="./img/gallery3.png" alt="" class="gallery__img"></li>
-            <li class="gallery-item"><img src="./img/gallery4.png" alt="" class="gallery__img"></li>
-            <li class="gallery-item"><img src="./img/gallery5.png" alt="" class="gallery__img"></li>
-            <li class="gallery-item"><img src="./img/gallery6.png" alt="" class="gallery__img"></li>
-          </ul>
+          <div class="gallery__list list-reset">
+            <div class="gallery__item"><img src="./img/gallery1.png" alt="" class="gallery__img"></div>
+            <div class="gallery__item"><img src="./img/gallery2.png" alt="" class="gallery__img"></div>
+            <div class="gallery__item"><img src="./img/gallery3.png" alt="" class="gallery__img"></div>
+            <div class="gallery__item"><img src="./img/gallery4.png" alt="" class="gallery__img"></div>
+            <div class="gallery__item"><img src="./img/gallery5.png" alt="" class="gallery__img"></div>
+            <div class="gallery__item"><img src="./img/gallery6.png" alt="" class="gallery__img"></div>
+          </div>
           <div class="gallery__description visible-xs">
             <div class="container">
               <p>В процессе обучения всегда участвует команда, состоящая из преподавателя и ученика. Именно командный подход приносит наилучшие результаты</p>
@@ -260,23 +274,53 @@
     <section class="reviews">
       <div class="container">
         <h2 class="reviews__title section-title">Отзывы учеников</h2>
-        <ul class="reviews__list list-reset">
-          <li class="reviews__item">
-            <div class="reviews__img">
-              <img src="./img/review1.png" alt="">
-            </div>
-            <div class="reviews__content">
-              <h3 class="reviews__name">Екатерина Макарова</h3>
-              <ul class="reviews__features">
-                <li class="reviews__features-item">Окончила курс В1 (испанский язык)</li>
-                <li class="reviews__features-item">Поступила в Univercitad de Valencia</li>
-              </ul>
-              <div class="reviews__body">
-                <p>Многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть верифициров Таким образом, новая модель организационной деятельности прекрасно подходит для реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: выбранный нами инновационный путь, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для системы массового участия. И нет сомнений, что явные признаки победы институционализации, инициированные исключительно синтетически</p>
+        <div class="reviews__container">
+          <div class="reviews__list list-reset">
+            <div class="reviews__item">
+              <div class="reviews__img">
+                <img src="./img/review1.png" alt="">
+              </div>
+              <div class="reviews__content">
+                <h3 class="reviews__name">Екатерина Макарова</h3>
+                <ul class="reviews__features">
+                  <li class="reviews__features-item">Окончила курс В1 (испанский язык)</li>
+                  <li class="reviews__features-item">Поступила в Univercitad de Valencia</li>
+                </ul>
+                <div class="reviews__body">
+                  <p>Многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть верифициров Таким образом, новая модель организационной деятельности прекрасно подходит для реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: выбранный нами инновационный путь, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для системы массового участия. И нет сомнений, что явные признаки победы институционализации, инициированные исключительно синтетически</p>
+                </div>
               </div>
             </div>
-          </li>
-        </ul>
+            <div class="reviews__item">
+              <div class="reviews__img">
+                <img src="./img/review1.png" alt="">
+              </div>
+              <div class="reviews__content">
+                <h3 class="reviews__name">Екатерина Макарова</h3>
+                <ul class="reviews__features">
+                  <li class="reviews__features-item">Окончила курс В1 (испанский язык)</li>
+                  <li class="reviews__features-item">Поступила в Univercitad de Valencia</li>
+                </ul>
+                <div class="reviews__body">
+                  <p>Многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть верифициров Таким образом, новая модель организационной деятельности прекрасно подходит для реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: выбранный нами инновационный путь, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для системы массового участия. И нет сомнений, что явные признаки победы институционализации, инициированные исключительно синтетически</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__arrows carousel-arrows__container">
+            <div class="reviews__arrows--prev carousel-arrows__item carousel-arrows__item--prev" aria-label="Предыдущий слайд">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-ar-prev"></use>
+              </svg>
+            </div>
+            <div class="reviews__arrows--next carousel-arrows__item carousel-arrows__item--next" aria-label="Следующий слайд">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-ar-next"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+
         <div class="reviews__link-wrapper">
           <button href="#" class="btn btn-primary btn-reset reviews__btn">Читать все отзывы</button>
           <button href="#" class="btn btn-secondary btn-reset reviews__btn">Оставить свой отзыв</button>
@@ -453,5 +497,8 @@
   </footer>
 
   <!--  <partial></partial>  -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

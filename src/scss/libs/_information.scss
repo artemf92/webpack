@@ -99,3 +99,33 @@
     line-height: 21px;
   }
 }
+
+@media (max-width: 1200px) {
+  .information__list {
+    margin-bottom: 95px;
+  }
+}
+
+@media (max-width: 992px) {
+  .information__list {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .information__list {
+    margin-bottom: 65px;
+  }
+}
+
+@media (max-width: 570px) {
+  .information__list {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .information__list {
+    margin-bottom: 40px;
+  }
+}
