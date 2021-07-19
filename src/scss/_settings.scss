@@ -179,6 +179,10 @@ a {
   color: var(--color-main);
   transition: color var(--main-transition);
 
+  &--black {
+    color: var(--color-black);
+  }
+
   &:hover {
     color: var(--color-main-hover);
   }

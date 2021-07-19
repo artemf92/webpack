@@ -162,6 +162,46 @@
       </div>
     </div>
   </section>
+
+  <div class="record record__page-reviews">
+    <div class="container">
+      <div class="record__container">
+        <h3 class="record__title">Оставьте свой отзыв о нашей работе</h3>
+        <form action="" class="form form__review">
+          <div class="form__cell-left">
+            <div class="form__field">
+              <input type="text" name="review-name" class="form__input" required>
+              <span class="form__input-placeholder">Ваше имя *</span></div>
+            <div class="form__field">
+              <input type="text" class="form__input form__input--phone" required>
+              <span class="form__input-placeholder">Номер телефона *</span>
+            </div>
+            <div class="form__field form__field--file">
+              <input type="file" class="form__input--file">
+              <p class="dragndrop">
+                <span class="icon">
+                  <svg>
+                      <use xlink:href="./spritemap.svg#sprite-dnd"></use>
+                  </svg>
+                </span>
+                <span>Загрузить изображение</span>
+              </p>
+            </div>
+          </div>
+          <div class="form__cell-right">
+            <div class="form__field">
+              <textarea name="body" class="form__textarea"></textarea>
+              <span class="form__input-placeholder form__input-placeholder--textarea">Текст отзыва</span>
+            </div>
+            <div class="form__btn-wrapper">
+              <button type="submit" class="form__submit form__submit--review btn btn-secondary">Записаться</button>
+              <p class="form__politics form__politics--review">Записываясь, вы подтверждаете что ознакомлены<br> с <a href="#" class="link link--black">политикой конфиденциальности</a> и согласны на обработку персональных данных</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer class="page-footer">

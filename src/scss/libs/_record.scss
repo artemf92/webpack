@@ -1,0 +1,87 @@
+.record {
+  &__container {
+    padding: 41px 50px 44px;
+    background-color: #F95151;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+  &__title {
+    color: var(--color-white);
+    margin-bottom: 33px;
+  }
+  .form__review {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 40px;
+  }
+  .form__field {
+    margin-bottom: 15px;
+
+    &--file {
+      margin-top: 43px;
+      margin-bottom: 0;
+    }
+  }
+  .form__input,
+  .form__textarea {
+    background-color: #F69797;
+    border-color: #F69797;
+  }
+  .form__input-placeholder {
+    color: var(--color-main);
+  }
+  .form__input--file {
+    position: absolute;
+    opacity: 0;
+    &:hover,
+    &:focus,
+    &:active {
+      border: none;
+      opacity: 0;
+      outline: none;
+    }
+  }
+  .dragndrop {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 18px;
+      width: 18px;
+      height: 18px;
+      fill: var(--color-white);
+    }
+    color: var(--color-white);
+  }
+  .form__submit--review {
+    margin: 0 35px 0 0;
+  }
+  .form__politics--review {
+    display: inline-block;
+    margin: 0;
+    color: var(--color-white);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 15px;
+    a {
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 15px;
+      color: var(--color-black);
+    }
+  }
+  .form__btn-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form {
+  &__cell-left {
+    grid-column: 5 span;
+  }
+  &__cell-right {
+    grid-column: 7 span;
+  }
+}
