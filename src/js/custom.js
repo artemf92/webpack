@@ -35,6 +35,23 @@ let enableScroll = function () {
 
 $(document).ready(function() {
   $('.hero__features-item').matchHeight();
+  $("input.form__input--phone").mask("+7(999) 999-9999");
+
+  $('.form__input').blur(function () {
+    if($(this).val() !== '') {
+      $(this).next('.form__input-placeholder').hide();
+    }
+  })
+
+  $('.form__textarea').blur(function () {
+    if($(this).val() !== '') {
+      $(this).next('.form__input-placeholder').hide();
+    }
+  })
+
+  $('.modal__close').click(function () {
+    $.fancybox.close();
+  })
 
   $(".gallery__item").fancybox({
     'transitionIn'	:	'elastic',
@@ -49,6 +66,15 @@ $(document).ready(function() {
     'speedIn'		:	600,
     'speedOut'		:	200,
     'overlayShow'	:	false
+  });
+  $("a[data-fancybox='modal']").fancybox({
+    'transitionIn'	:	'elastic',
+    'transitionOut'	:	'elastic',
+    'speedIn'		:	600,
+    'speedOut'		:	200,
+    'overlayShow'	:	false,
+    'modal' : true,
+    'showCloseButton' : true,
   });
 
   if ($('.hero__features').length) {
