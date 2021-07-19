@@ -28,7 +28,20 @@
     border-radius: var(--border-radius);
     overflow: hidden;
   }
+  &__item {
+    img {
+      opacity: .3;
+      transition: opacity var(--main-transition);
+    }
+    &.slick-active {
+      img {
+        opacity: 1;
+      }
+    }
+  }
 }
+
+
 
 @media (max-width: 768px) {
   .gallery__description {
@@ -40,17 +53,6 @@
   .gallery__description {
     font-size: 13px;
     line-height: 20px;
-  }
-  .gallery__item {
-    img {
-      opacity: .3;
-      transition: opacity var(--main-transition);
-    }
-    &.slick-current {
-      img {
-        opacity: 1;
-      }
-    }
   }
   .gallery__arrows {
     display: none!important;

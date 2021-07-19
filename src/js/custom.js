@@ -36,6 +36,21 @@ let enableScroll = function () {
 $(document).ready(function() {
   $('.hero__features-item').matchHeight();
 
+  $(".gallery__item").fancybox({
+    'transitionIn'	:	'elastic',
+    'transitionOut'	:	'elastic',
+    'speedIn'		:	600,
+    'speedOut'		:	200,
+    'overlayShow'	:	false
+  });
+  $("a.lessons__media").fancybox({
+    'transitionIn'	:	'elastic',
+    'transitionOut'	:	'elastic',
+    'speedIn'		:	600,
+    'speedOut'		:	200,
+    'overlayShow'	:	false
+  });
+
   if ($('.hero__features').length) {
     $(".hero__features").slick({
       mobileFirst: true,
@@ -72,6 +87,7 @@ $(document).ready(function() {
     $('.teachers__arrows').css('display', 'flex')
     $('.teachers__list').slick({
       infinite: false,
+      autoplay: true,
       prevArrow: $('.teachers__arrows--prev'),
       nextArrow: $('.teachers__arrows--next')
     })
@@ -119,6 +135,7 @@ $(document).ready(function() {
     $('.reviews__arrows').css('display', 'flex')
     $('.reviews__list').slick({
       infinite: false,
+      autoplay: true,
       prevArrow: $('.reviews__arrows--prev'),
       nextArrow: $('.reviews__arrows--next'),
     })

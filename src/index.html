@@ -17,6 +17,7 @@
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header class="page-header">
@@ -232,10 +233,10 @@
               <div class="clearfix"></div>
             </div>
           </div>
-          <div class="lessons__media">
+          <a href="./img/media.png" class="lessons__media">
             <img src="./img/media.png" alt="Как проходят наши уроки">
-            <a href="javascript:void(0);" class="play" aria-label="Посмотреть видео"></a>
-          </div>
+            <button href="javascript:void(0);" class="play" aria-label="Посмотреть видео"></button>
+          </a>
         </div>
       </div>
       <div class="gallery">
@@ -255,12 +256,12 @@
             </div>
           </div>
           <div class="gallery__list list-reset">
-            <div class="gallery__item"><img src="./img/gallery1.png" alt="" class="gallery__img"></div>
-            <div class="gallery__item"><img src="./img/gallery2.png" alt="" class="gallery__img"></div>
-            <div class="gallery__item"><img src="./img/gallery3.png" alt="" class="gallery__img"></div>
-            <div class="gallery__item"><img src="./img/gallery4.png" alt="" class="gallery__img"></div>
-            <div class="gallery__item"><img src="./img/gallery5.png" alt="" class="gallery__img"></div>
-            <div class="gallery__item"><img src="./img/gallery6.png" alt="" class="gallery__img"></div>
+            <a href="./img/gallery1.png" class="gallery__item"><img src="./img/gallery1.png" alt="" class="gallery__img"></a>
+            <a href="./img/gallery2.png" class="gallery__item"><img src="./img/gallery2.png" alt="" class="gallery__img"></a>
+            <a href="./img/gallery3.png" class="gallery__item"><img src="./img/gallery3.png" alt="" class="gallery__img"></a>
+            <a href="./img/gallery4.png" class="gallery__item"><img src="./img/gallery4.png" alt="" class="gallery__img"></a>
+            <a href="./img/gallery5.png" class="gallery__item"><img src="./img/gallery5.png" alt="" class="gallery__img"></a>
+            <a href="./img/gallery6.png" class="gallery__item"><img src="./img/gallery6.png" alt="" class="gallery__img"></a>
           </div>
           <div class="gallery__description visible-xs">
             <div class="container">
@@ -366,13 +367,13 @@
             </ul>
           </div>
           <div class="record-bottom__btns">
-            <a href="#" class="record-bottom__btn">
+            <a href="#" class="record-bottom__btn record-bottom__btn--english">
               <svg>
                 <use xlink:href="./spritemap.svg#sprite-uk"></use>
               </svg>
               <span>Английский язык</span>
             </a>
-            <a href="#" class="record-bottom__btn">
+            <a href="#" class="record-bottom__btn record-bottom__btn--spanish">
               <svg>
                 <use xlink:href="./spritemap.svg#sprite-spain"></use>
               </svg>
@@ -499,6 +500,7 @@
   <!--  <partial></partial>  -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

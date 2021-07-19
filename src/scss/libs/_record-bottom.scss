@@ -56,11 +56,27 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
-    transition: color var(--main-transition);
+    transition: color var(--main-transition), background-color var(--main-transition), border-color var(--main-transition);
+
+    &--english:hover,
+    &--english:active,
+    &--english:focus {
+      color: #fff;
+      background-color: #5064AA;
+      border-color: #5064AA;
+    }
+    &--spanish:hover,
+    &--spanish:active,
+    &--spanish:focus {
+      color: #fff;
+      background-color: #FFD250;
+      border-color: #FFD250;
+    }
 
     &:not(:last-child) {
       margin-bottom: 26px;
     }
+
 
     svg {
       position: absolute;
@@ -71,11 +87,7 @@
       height: 35px;
     }
 
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--color-main-hover);
-    }
+
   }
   &__politics {
     display: none;
