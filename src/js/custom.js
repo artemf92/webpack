@@ -35,6 +35,8 @@ let enableScroll = function () {
 
 $(document).ready(function() {
   $('.hero__features-item').matchHeight();
+  $('.grid__title').matchHeight();
+  $('.grid__item').matchHeight();
   $("input.form__input--phone").mask("+7(999) 999-9999");
 
   $('.form__input').blur(function () {
@@ -53,6 +55,19 @@ $(document).ready(function() {
     $.fancybox.close();
   })
 
+  $("a[href$='.jpg'], a[href$='.jpeg'], a[href$='.png'], a[href$='.webp']").click(function() {
+    event.preventDefault();
+    var gallerybox = $(this).parent().find($("a[href$='.jpg'], a[href$='.jpeg'], a[href$='.png'], a[href$='.webp']"));
+    if (gallerybox.length > 1) {
+      var index = $(this).index();
+      $.fancybox.open(gallerybox, {
+        'index' : index,
+        loop: true
+      });
+    } else {
+      $.fancybox.open(gallerybox);
+    }
+  });
   $(".gallery__item").fancybox({
     'transitionIn'	:	'elastic',
     'transitionOut'	:	'elastic',

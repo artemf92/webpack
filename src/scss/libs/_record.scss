@@ -32,6 +32,7 @@
   }
   .form__input--file {
     position: absolute;
+    cursor: pointer;
     opacity: 0;
     &:hover,
     &:focus,
@@ -45,6 +46,7 @@
     display: flex;
     align-items: center;
     svg {
+      cursor: pointer;
       margin-right: 18px;
       width: 18px;
       height: 18px;
@@ -83,5 +85,48 @@
   }
   &__cell-right {
     grid-column: 7 span;
+  }
+
+  &__textarea {
+    &--review {
+      min-height: 105px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .record .form__submit--review {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .record .form__btn-wrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .record .form__review {
+    display: block;
+  }
+  .record .form__submit--review {
+    margin: 0 auto 20px;
+  }
+  .record .form__politics--review {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 570px) {
+  .record__container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .record .form__submit--review {
+    min-width: 200px;
   }
 }

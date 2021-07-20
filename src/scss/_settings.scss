@@ -199,6 +199,7 @@ a {
   border: 3px solid #FFFFFF;
   border-radius: 50%;
   transition: background-color var(--main-transition);
+  cursor: pointer;
 
   &:after {
     position: absolute;
@@ -220,6 +221,7 @@ a {
 
 .btn {
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   min-width: 240px;
@@ -231,7 +233,7 @@ a {
   font-weight: 700;
   line-height: 14px;
   text-align: center;
-  transition: background-color var(--main-transition), color var(--main-transition);
+  transition: background-color var(--main-transition), color var(--main-transition), border-color var(--main-transition);
 }
 
 .btn-primary {
@@ -312,6 +314,16 @@ a {
 
 .breadcrumbs {
   margin: 46px 0 70px;
+}
+
+.text-center {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.archive-news__title {
+  margin-bottom: 70px;
 }
 
 @media (min-width: 570px) {
