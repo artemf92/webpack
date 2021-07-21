@@ -1,7 +1,22 @@
 .form {
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    &--services {
+      color: var(--color-white);
+      margin-bottom: 16px;
+    }
+  }
   &__field {
     position: relative;
     margin-bottom: 20px;
+
+    &--services {
+      display: flex;
+    }
   }
   &__input,
   &__textarea {
@@ -76,19 +91,42 @@
     line-height: 17px;
     margin-bottom: 37px;
 
-    a {
-      color: var(--color-main);
-      text-decoration: underline;
-      transition: color var(--main-transition);
+    &--services {
+      color: #fff;
+      margin: 0;
+      font-size: 10px;
+      line-height: 15px;
 
-      &:hover,
-      &:focus {
-        color: var(--color-main-hover);
+      .link {
+        font-size: 10px;
+        line-height: 15px;
       }
     }
+
+    &--services-hero {
+      margin: 0;
+    }
+
+    //a {
+    //  //color: var(--color-main);
+    //  text-decoration: underline;
+    //  transition: color var(--main-transition);
+    //
+    //  &:hover,
+    //  &:focus {
+    //    color: var(--color-main-hover);
+    //  }
+    //}
   }
   &__submit {
     display: block;
     margin: 0 auto;
+    &--services {
+      margin-right: 35px;
+    }
+
+    &--services-hero {
+      margin-left: -20px;
+    }
   }
 }

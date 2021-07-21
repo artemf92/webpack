@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=API&load=package.standard&lang=ru-RU" type="text/javascript"></script>
 </head>
-<body>
+<body class="page-template-services">
 <header class="page-header">
   <div class="container">
     <a href="/" class="page-header__logo" aria-label="Логотип English & Spanish School" style="background-image: url('./img/logo.png');"></a>
@@ -36,15 +36,15 @@
           <use xlink:href="./spritemap.svg#sprite-phone"></use>
         </svg>
       </a>
-      <a href="#modal-record" data-fancybox="modal" class="page-header__callback">
+      <a href="#modal-record" class="page-header__callback">
         <span class="page-header__callback--xl">Записаться в школу</span>
         <span class="page-header__callback--md">Записаться</span>
       </a>
-      <!--<a href="#modal-question" data-fancybox="modal" class="page-header__callback">
+      <!--<a href="#modal-question" class="page-header__callback">
         <span class="page-header__callback--xl">Записаться в школу</span>
         <span class="page-header__callback--md">Записаться</span>
       </a>-->
-      <!--<a href="#modal-thanks" data-fancybox="modal" class="page-header__callback">
+      <!--<a href="#modal-thanks" class="page-header__callback">
         <span class="page-header__callback--xl">Записаться в школу</span>
         <span class="page-header__callback--md">Записаться</span>
       </a>-->
@@ -92,104 +92,460 @@
       Главная              Контакты
     </div>
   </div>
-  <section class="archive-news">
+  <section class="hero hero--services" style="background-image: url(../img/hero-services-bg.png);">
     <div class="container">
-      <h1 class="archive-news__title section-title">Наши новости</h1>
-      <div class="grid__container">
-        <article class="grid__item">
-          <a href="#">
-            <img src="./img/news1.png" alt="С учётом сложившейся международной обстановки, высокотехнологичная концепция общественного " class="grid__cover">
-          </a>
-          <span class="grid__tag">Английский язык</span>
-          <a href="#" class="grid__title">
-            <h3>С учётом сложившейся международной обстановки, высокотехнологичная концепция общественного </h3>
-          </a>
-          <p class="grid__excerpt">Также как сплочённость команды профессионалов позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
-        </article>
-        <article class="grid__item">
-          <a href="#">
-            <img src="./img/news2.png" alt="В частности, сложившаяся структура организации говорит о возможностях кластеризации усилий" class="grid__cover">
-          </a>
-          <span class="grid__tag">Испанский язык</span>
-          <a href="#" class="grid__title">
-            <h3>В частности, сложившаяся структура организации говорит о возможностях кластеризации усилий</h3>
-          </a>
-          <p class="grid__excerpt">Имеется спорная точка зрения, гласящая примерно следующее: элементы политического процесса формируют глобальную экономическую сеть и при этом -  ограничены исключительно </p>
-        </article>
-        <article class="grid__item">
-          <a href="#">
-            <img src="./img/news3.png" alt="Прежде всего, постоянное информационно-пропагандистское обеспечение " class="grid__cover">
-          </a>
-          <span class="grid__tag">Школа</span>
-          <a href="#" class="grid__title">
-            <h3>Прежде всего, постоянное информационно-пропагандистское обеспечение </h3>
-          </a>
-          <p class="grid__excerpt">В своём стремлении повысить качество жизни, они забывают, что семантический разбор внешних противодействий прекрасно </p>
-        </article>
-        <article class="grid__item">
-          <a href="#">
-            <img src="./img/news4.png" alt="С учётом сложившейся международной обстановки, высокотехнологичная концепция общественного " class="grid__cover">
-          </a>
-          <span class="grid__tag">Английский язык</span>
-          <a href="#" class="grid__title">
-            <h3>С учётом сложившейся международной обстановки, высокотехнологичная концепция общественного </h3>
-          </a>
-          <p class="grid__excerpt">Также как сплочённость команды профессионалов позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
-        </article>
-        <article class="grid__item">
-          <a href="#">
-            <img src="./img/news5.png" alt="В частности, сложившаяся структура организации говорит о возможностях кластеризации усилий" class="grid__cover">
-          </a>
-          <span class="grid__tag">Испанский язык</span>
-          <a href="#" class="grid__title">
-            <h3>В частности, сложившаяся структура организации говорит о возможностях кластеризации усилий</h3>
-          </a>
-          <p class="grid__excerpt">Имеется спорная точка зрения, гласящая примерно следующее: элементы политического процесса формируют глобальную экономическую сеть и при этом -  ограничены исключительно </p>
-        </article>
-        <article class="grid__item">
-          <a href="#">
-            <img src="./img/news6.png" alt="Прежде всего, постоянное информационно-пропагандистское обеспечение " class="grid__cover">
-          </a>
-          <span class="grid__tag">Школа</span>
-          <a href="#" class="grid__title">
-            <h3>Прежде всего, постоянное информационно-пропагандистское обеспечение </h3>
-          </a>
-          <p class="grid__excerpt">В своём стремлении повысить качество жизни, они забывают, что семантический разбор внешних противодействий прекрасно </p>
-        </article>
-        <article class="grid__item">
-          <a href="#">
-            <img src="./img/news7.png" alt="С учётом сложившейся международной обстановки, высокотехнологичная концепция общественного " class="grid__cover">
-          </a>
-          <span class="grid__tag">Английский язык</span>
-          <a href="#" class="grid__title">
-            <h3>С учётом сложившейся международной обстановки, высокотехнологичная концепция общественного </h3>
-          </a>
-          <p class="grid__excerpt">Также как сплочённость команды профессионалов позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач.</p>
-        </article>
-        <article class="grid__item">
-          <a href="#">
-            <img src="./img/news8.png" alt="В частности, сложившаяся структура организации говорит о возможностях кластеризации усилий" class="grid__cover">
-          </a>
-          <span class="grid__tag">Испанский язык</span>
-          <a href="#" class="grid__title">
-            <h3>В частности, сложившаяся структура организации говорит о возможностях кластеризации усилий</h3>
-          </a>
-          <p class="grid__excerpt">Имеется спорная точка зрения, гласящая примерно следующее: элементы политического процесса формируют глобальную экономическую сеть и при этом -  ограничены исключительно </p>
-        </article>
-        <article class="grid__item">
-          <a href="#">
-            <img src="./img/news9.png" alt="Прежде всего, постоянное информационно-пропагандистское обеспечение " class="grid__cover">
-          </a>
-          <span class="grid__tag">Школа</span>
-          <a href="#" class="grid__title">
-            <h3>Прежде всего, постоянное информационно-пропагандистское обеспечение </h3>
-          </a>
-          <p class="grid__excerpt">В своём стремлении повысить качество жизни, они забывают, что семантический разбор внешних противодействий прекрасно </p>
-        </article>
+      <div class="hero__content">
+        <h1 class="hero__title hero__title--services">Испанский язык</h1>
+        <p class="hero__text hero__text--services">Осуществите свою мечту — выучите испанский язык с легкостью</p>
+        <p class="hero__price">от 4 500 руб.</p>
       </div>
-      <button class="btn btn-secondary grid__load-btn">Загрузить еще новости</button>
+      <div class="hero__callback">
+        <h3 class="hero__callback-title">Набираем вечерние группы испанского языка <strong>со скидкой 10%</strong></h3>
+        <p class="hero__callback-subtitle">Запишитесь на бесплатный урок:</p>
+        <form action="" class="form form__services">
+          <div class="form__field form__field--services">
+            <input type="text" name="phone-cb" class="form__input">
+            <button class="btn btn-primary form__submit form__submit--services">Записаться</button>
+            <span class="form__input-placeholder">Номер телефона <i class="form__input-placeholder--required">*</i></span>
+          </div>
+          <p class="form__politics form__politics--services-hero">Записываясь, вы подтверждаете что ознакомлены с <a href="#">политикой конфиденциальности</a> и согласны на обработку персональных данных</p>
+        </form>
+      </div>
+    </div>
+    <div class="hero__front-image hero__front-image--services">
+      <div class="container">
+        <h2 class="hero__mobile-title">Обучение английскому и испанскому языку в Калининграде</h2>
+      </div>
+      <img class="hero__front-image--md" src="./img/services-hero.png" alt="Языковая школа в Калининграде">
+      <img class="hero__front-image--xs" src="./img/hero-front-mobile.png" alt="Языковая школа в Калининграде">
     </div>
   </section>
+
+  <section class="services">
+    <div class="container">
+      <div class="services__title section-title">Мы предлагаем обучение у нас</div>
+      <div class="grid grid--services">
+        <div class="grid__item">
+          <a href="#" class="grid__cover grid__cover--services">
+            <img src="./img/services1.png" alt="Для детей">
+          </a>
+          <a href="#" class="grid__title grid__title--services">
+            <h3>Для детей</h3>
+          </a>
+        </div>
+        <div class="grid__item">
+          <a href="#" class="grid__cover grid__cover--services">
+            <img src="./img/services2.png" alt="Для взрослых">
+          </a>
+          <a href="#" class="grid__title grid__title--services">
+            <h3>Для взрослых</h3>
+          </a>
+        </div>
+        <div class="grid__item">
+          <a href="#" class="grid__cover grid__cover--services">
+            <img src="./img/services3.png" alt="Уроки испанского по Skype">
+          </a>
+          <a href="#" class="grid__title grid__title--services">
+            <h3>Уроки испанского по Skype</h3>
+          </a>
+        </div>
+        <div class="grid__item">
+          <a href="#" class="grid__cover grid__cover--services">
+            <img src="./img/services4.png" alt="Испанский для туризма">
+          </a>
+          <a href="#" class="grid__title grid__title--services">
+            <h3>Испанский для туризма</h3>
+          </a>
+        </div>
+        <div class="grid__item">
+          <a href="#" class="grid__cover grid__cover--services">
+            <img src="./img/services5.png" alt="Интенсивные курсы испанского">
+          </a>
+          <a href="#" class="grid__title grid__title--services">
+            <h3>Интенсивные курсы испанского</h3>
+          </a>
+        </div>
+        <div class="grid__item">
+          <a href="#" class="grid__cover grid__cover--services">
+            <img src="./img/services6.png" alt="Подготовка к поступлению в ВУЗы Испании">
+          </a>
+          <a href="#" class="grid__title grid__title--services">
+            <h3>Подготовка к поступлению<br> в ВУЗы Испании</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <div class="container">
+      <h2 class="promo__title section-title">Испанский в нашей школе — это</h2>
+      <div class="promo__wrap">
+        <div class="promo__content">
+          <p class="promo__subtitle">Принимая во внимание показатели успешности, высокое качество позиционных исследований обеспечивает актуальность дальнейших направлений развития!</p>
+          <div class="promo__text">
+            <p>Многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть верифициров Таким образом, новая модель организационной деятельности прекрасно подходит для реализации существующих финансовых и административных условий.
+
+              Каждый из нас понимает очевидную вещь: выбранный нами инновационный путь, а также свежий взгляд на привычные вещ. Таким образом, новая модель организационной деятельности прекрасно </p>
+          </div>
+        </div>
+        <div class="promo__cover">
+          <img src="./img/promo.png" alt="" class="promo__img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="price">
+    <div class="container">
+      <h2 class="price__title section-title">Стоимость обучения</h2>
+      <p class="price__subtitle">Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции обеспечивает актуальность приоритизации разума над эмоциями. Банальные, но неопровержимые выводы, а также активно развивающиеся страны третьего мира, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут представлены в исключительно положительном свете. С другой стороны, начало повседневной работы по формированию позиции способствует повышению качества направлений прогрессивного развития.</p>
+      <div class="price__grid">
+        <div class="price__item">
+          <h3 class="price__subject">бесплатный урок</h3>
+          <p class="price__desc">
+            <span class="price__time">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-clock"></use>
+              </svg>
+              <span class="price__time-value">40 минут</span>
+            </span>
+            <span class="price__lessons">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-clndr"></use>
+              </svg>
+              <span class="price__lessons-value">1 занятие в месяц</span>
+            </span>
+          </p>
+          <p class="price__value">БЕСПЛАТНО</p>
+          <button class="btn btn-primary price__btn">Записаться</button>
+        </div>
+        <div class="price__item">
+          <h3 class="price__subject">груповые занятия</h3>
+          <p class="price__desc">
+            <span class="price__time">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-clock"></use>
+              </svg>
+              <span class="price__time-value">90 минут</span>
+            </span>
+            <span class="price__lessons">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-clndr"></use>
+              </svg>
+              <span class="price__lessons-value">8 занятий в месяц</span>
+            </span>
+          </p>
+          <p class="price__value">4 500 <span class="price__currency">руб./мес</span></p>
+          <button class="btn btn-primary price__btn">Записаться</button>
+        </div>
+        <div class="price__item">
+          <h3 class="price__subject">Занятия в паре</h3>
+          <p class="price__desc">
+            <span class="price__time">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-clock"></use>
+              </svg>
+              <span class="price__time-value">40 минут</span>
+            </span>
+            <span class="price__lessons">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-clndr"></use>
+              </svg>
+              <span class="price__lessons-value">1 занятие в месяц</span>
+            </span>
+          </p>
+          <p class="price__value">8 500 <span class="price__currency">руб./мес</span></p>
+          <button class="btn btn-primary price__btn">Записаться</button>
+        </div>
+        <div class="price__item">
+          <h3 class="price__subject">индивидуальные занятия</h3>
+          <p class="price__desc">
+            <span class="price__time">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-clock"></use>
+              </svg>
+              <span class="price__time-value">90 минут</span>
+            </span>
+            <span class="price__lessons">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-clndr"></use>
+              </svg>
+              <span class="price__lessons-value">8 занятий в месяц</span>
+            </span>
+          </p>
+          <p class="price__value">12 500 <span class="price__currency">руб./мес</span></p>
+          <button class="btn btn-primary price__btn">Записаться</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="progress">
+    <div class="container">
+      <h3 class="progress__title">Ваш прогресс после курса</h3>
+      <p class="progress__subtitle">Многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть верифициров</p>
+      <ul class="progress__container list-reset">
+        <li class="progress__item">
+          <span class="icon">
+            <svg>
+            <use xlink:href="./spritemap.svg#sprite-prg1"></use>
+          </svg>
+          </span>
+          <span>Увеличите словарный запас не менее, чем на 4000 слов</span>
+        </li>
+        <li class="progress__item">
+          <span class="icon">
+             <svg>
+            <use xlink:href="./spritemap.svg#sprite-prg2"></use>
+          </svg>
+          </span>
+          <span>Сможете узнать маршрут у гражданина другой страны</span>
+        </li>
+        <li class="progress__item">
+          <span class="icon">
+            <svg>
+            <use xlink:href="./spritemap.svg#sprite-prg1"></use>
+          </svg>
+          </span>
+          <span>Сможете смотреть сериалы и фильмы на иностранном языке</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="record record--services">
+    <div class="container">
+      <div class="record__container record__container--services">
+        <div class="record__cell record__cell--left">
+          <h2 class="record__title record__title--services section-title">Запишитесь на <span class="highlight">бесплатное пробное занятие</span> с директором</h2>
+          <p class="record__subtitle record__subtitle--services">На занятиях мы познакомимся и покажем как происходят занятия.
+            Вы узнаете свой уровень языка и получите скидку</p>
+          <ul class="record__descr list-reset">
+            <li class="record__descr-item">
+            <span class="icon">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-skype"></use>
+              </svg>
+            </span>
+              <span>Обучение:
+                Skype или очно</span>
+            </li>
+            <li class="record__descr-item">
+            <span class="icon">
+              <svg>
+                  <use xlink:href="./spritemap.svg#sprite-clock"></use>
+              </svg>
+            </span>
+              <span>40 минут —
+                время урока</span>
+            </li>
+          </ul>
+        </div>
+        <div class="record__cell record__cell--right">
+          <form action="" class="form form__services">
+            <p class="form__title form__title--services">Ваши данные</p>
+            <div class="form__field form__field--services">
+              <input type="text" name="s-name" class="form__input form__input--services">
+              <span class="form__input-placeholder form__input-placeholder--services">Ваше имя *</span>
+            </div>
+            <div class="form__field form__field--services">
+              <input type="text" name="s-name" class="form__input form__input--services form__input--phone">
+              <span class="form__input-placeholder form__input-placeholder--services">Номер телефона *</span>
+            </div>
+            <div class="form__btn-wrapper">
+              <button type="submit" class="form__submit form__submit--services btn btn-secondary">Записаться</button>
+              <p class="form__politics form__politics--services">Записываясь, вы подтверждаете что ознакомлены<br> с <a href="#" class="link link--black">политикой конфиденциальности</a> и согласны на обработку персональных данных</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="teachers">
+    <div class="container">
+      <h2 class="teachers__title section-title">Талантливые преподаватели</h2>
+      <div class="teachers__inner">
+        <div class="teachers__list list-reset">
+          <div class="teachers__item">
+            <img src="./img/teach.png" alt="Ткач Дина Игоревна" class="teachers__photo">
+            <div class="teachers__card">
+              <h3 class="teachers__lastname">Ткач</h3>
+              <p class="teachers__firstname">Дина Игоревна</p>
+              <span class="teachers__job">Директор, преподаватель английского и испанского</span>
+              <span class="teachers__exp">Опыт работы — 5 лет</span>
+              <div class="teachers__description"><span class="highlight">“</span> Разнообразный и богатый опыт говорит нам, что современная методология разработки позволяет выполнить важные задания по разработке первоочередных требований. Идейные соображения высшего порядка, а также сложившаяся структура организации создаёт предпосылки для первоочередных требований. Внезапно, действия представителей оппозиции лишь добавляют фракционных разногласий и ассоциативно распределены по отраслям. <span class="highlight">“</span></div>
+            </div>
+          </div>
+          <div class="teachers__item">
+            <img src="./img/teach.png" alt="Ткач Дина Игоревна" class="teachers__photo">
+            <div class="teachers__card">
+              <h3 class="teachers__lastname">Ткач</h3>
+              <p class="teachers__firstname">Дина Игоревна</p>
+              <span class="teachers__job">Директор, преподаватель английского и испанского</span>
+              <span class="teachers__exp">Опыт работы — 5 лет</span>
+              <div class="teachers__description"><span class="highlight">“</span> Разнообразный и богатый опыт говорит нам, что современная методология разработки позволяет выполнить важные задания по разработке первоочередных требований. Идейные соображения высшего порядка, а также сложившаяся структура организации создаёт предпосылки для первоочередных требований. Внезапно, действия представителей оппозиции лишь добавляют фракционных разногласий и ассоциативно распределены по отраслям. <span class="highlight">“</span></div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="teachers__link">Посмотреть всех преподавателей</a>
+        <div class="teachers__arrows carousel-arrows__container">
+          <div class="teachers__arrows--prev carousel-arrows__item carousel-arrows__item--prev" aria-label="Предыдущий слайд">
+            <svg>
+              <use xlink:href="./spritemap.svg#sprite-ar-prev"></use>
+            </svg>
+          </div>
+          <div class="teachers__arrows--next carousel-arrows__item carousel-arrows__item--next" aria-label="Следующий слайд">
+            <svg>
+              <use xlink:href="./spritemap.svg#sprite-ar-next"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lessons">
+    <div class="container">
+      <div class="lessons__title section-title">Как проходят наши уроки</div>
+    </div>
+    <div class="gallery">
+      <div class="gallery__inner">
+        <div class="container container--services">
+          <div class="gallery__subtitle gallery__subtitle--services">А ещё акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть ограничены исключительно образом мышления.
+            Задача организации, в особенности же начало повседневной работы по формированию позиции предполагает независимые способы реализации направлений прогрессивного развития.</div>
+          <div class="gallery__arrows gallery__arrows--services carousel-arrows__container">
+            <div class="gallery__arrows--prev carousel-arrows__item carousel-arrows__item--prev" aria-label="Предыдущий слайд">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-ar-prev"></use>
+              </svg>
+            </div>
+            <div class="gallery__arrows--next carousel-arrows__item carousel-arrows__item--next" aria-label="Следующий слайд">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-ar-next"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__list list-reset">
+          <a href="./img/gallery1.png" class="gallery__item"><img src="./img/gallery1.png" alt="" class="gallery__img"></a>
+          <a href="./img/gallery2.png" class="gallery__item"><img src="./img/gallery2.png" alt="" class="gallery__img"></a>
+          <a href="./img/gallery3.png" class="gallery__item"><img src="./img/gallery3.png" alt="" class="gallery__img"></a>
+          <a href="./img/gallery4.png" class="gallery__item"><img src="./img/gallery4.png" alt="" class="gallery__img"></a>
+          <a href="./img/gallery5.png" class="gallery__item"><img src="./img/gallery5.png" alt="" class="gallery__img"></a>
+          <a href="./img/gallery6.png" class="gallery__item"><img src="./img/gallery6.png" alt="" class="gallery__img"></a>
+        </div>
+        <div class="gallery__description visible-xs">
+          <div class="container">
+            <p>В процессе обучения всегда участвует команда, состоящая из преподавателя и ученика. Именно командный подход приносит наилучшие результаты</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="record-bottom">
+    <div class="container">
+      <div class="record-bottom__inner">
+        <div class="record-bottom__content record-bottom__content--services">
+          <h3 class="record-bottom__title">У Вас есть <span class="highlight">вопросы</span> по обучению ?</h3>
+          <p class="record-bottom__subtitle">Оставьте заявку и мы перезвоним Вам в блищайшее время!
+            Или оставте свой вопрос, нажав на кнопку “Оставить вопрос” и мы ответим в течение 12 часов. </p>
+          <p class="record-bottom__socials">Вы можете также написать нам в чатменеджерах:
+            <a href="#" class="record-bottom__social" aria-label="Напишите нам WhatsApp">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-wapp"></use>
+              </svg>
+            </a>
+            <a href="#" class="record-bottom__social" aria-label="Напишите нам Telegram">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-tg"></use>
+              </svg>
+            </a>
+            <a href="#" class="record-bottom__social" aria-label="Напишите нам Viber">
+              <svg>
+                <use xlink:href="./spritemap.svg#sprite-viber"></use>
+              </svg>
+            </a>
+          </p>
+        </div>
+        <div class="record-bottom__cb-inner">
+          <a href="#modal-record" class="record__cb btn btn-secondary">Заказать звонок</a>
+          <a href="#modal-question" class="record__cb btn btn-secondary">Задать вопросы</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title section-title">Отзывы учеников</h2>
+      <div class="reviews__container">
+        <div class="reviews__list list-reset">
+          <div class="reviews__item">
+            <div class="reviews__img">
+              <img src="./img/review1.png" alt="">
+            </div>
+            <div class="reviews__content">
+              <h3 class="reviews__name">Екатерина Макарова</h3>
+              <ul class="reviews__features">
+                <li class="reviews__features-item">Окончила курс В1 (испанский язык)</li>
+                <li class="reviews__features-item">Поступила в Univercitad de Valencia</li>
+              </ul>
+              <div class="reviews__body">
+                <p>Многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть верифициров Таким образом, новая модель организационной деятельности прекрасно подходит для реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: выбранный нами инновационный путь, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для системы массового участия. И нет сомнений, что явные признаки победы институционализации, инициированные исключительно синтетически</p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__img">
+              <img src="./img/review1.png" alt="">
+            </div>
+            <div class="reviews__content">
+              <h3 class="reviews__name">Екатерина Макарова</h3>
+              <ul class="reviews__features">
+                <li class="reviews__features-item">Окончила курс В1 (испанский язык)</li>
+                <li class="reviews__features-item">Поступила в Univercitad de Valencia</li>
+              </ul>
+              <div class="reviews__body">
+                <p>Многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть верифициров Таким образом, новая модель организационной деятельности прекрасно подходит для реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: выбранный нами инновационный путь, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для системы массового участия. И нет сомнений, что явные признаки победы институционализации, инициированные исключительно синтетически</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__arrows carousel-arrows__container">
+          <div class="reviews__arrows--prev carousel-arrows__item carousel-arrows__item--prev" aria-label="Предыдущий слайд">
+            <svg>
+              <use xlink:href="./spritemap.svg#sprite-ar-prev"></use>
+            </svg>
+          </div>
+          <div class="reviews__arrows--next carousel-arrows__item carousel-arrows__item--next" aria-label="Следующий слайд">
+            <svg>
+              <use xlink:href="./spritemap.svg#sprite-ar-next"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__link-wrapper">
+        <button href="#" class="btn btn-primary btn-reset reviews__btn">Читать все отзывы</button>
+        <button href="#" class="btn btn-secondary btn-reset reviews__btn">Оставить свой отзыв</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="seo">
+    <div class="container">
+      <div class="seo__title section-title">СЕО БЛОК</div>
+      <div class="seo__content">
+        <p>Многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть верифициров Таким образом, новая модель организационной деятельности прекрасно подходит для реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: выбранный нами инновационный путь, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для системы массового участия. И нет сомнений, что явные признаки победы институционализации, инициированные исключительно синтетически.
+          <br>
+          <br>
+          Таким образом, новая модель организационной деятельности прекрасно подходит для реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: выбранный нами инновационный путь</p>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer class="page-footer">
@@ -362,9 +718,6 @@
   </div>
 </div>
 
-
-
-<!--  <partial></partial>  -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

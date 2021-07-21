@@ -1,0 +1,35 @@
+.progress {
+  margin-bottom: 95px;
+  &__title {
+    margin-bottom: 26px;
+  }
+  &__subtitle {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    margin-bottom: 65px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 329px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    svg {
+      width: 60px;
+      height: 60px;
+      fill: var(--color-main);
+      margin-right: 29px;
+    }
+  }
+}

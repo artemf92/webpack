@@ -87,16 +87,30 @@ $(document).ready(function() {
     'transitionOut'	:	'elastic',
     'speedIn'		:	600,
     'speedOut'		:	200,
-    'overlayShow'	:	false
+    'overlayShow'	:	false,
   });
-  $("a[data-fancybox='modal']").fancybox({
+  $("a[href$='modal-record']").fancybox({
+    'showCloseButton' : false,
     'transitionIn'	:	'elastic',
     'transitionOut'	:	'elastic',
     'speedIn'		:	600,
     'speedOut'		:	200,
-    'overlayShow'	:	false,
     'modal' : true,
-    'showCloseButton' : true,
+
+  });
+  $("a[href$='modal-question']").fancybox({
+    'transitionIn'	:	'elastic',
+    'transitionOut'	:	'elastic',
+    'speedIn'		:	600,
+    'speedOut'		:	200,
+    'modal' : true,
+  });
+  $("a[href$='modal-thanks']").fancybox({
+    'transitionIn'	:	'elastic',
+    'transitionOut'	:	'elastic',
+    'speedIn'		:	600,
+    'speedOut'		:	200,
+    'modal' : true,
   });
 
   if ($('.hero__features').length) {
@@ -148,17 +162,20 @@ $(document).ready(function() {
       autoplay: true,
       prevArrow: $('.gallery__arrows--prev'),
       nextArrow: $('.gallery__arrows--next'),
+      centerPadding: '240px',
       responsive: [
         {
           breakpoint: 1600,
           settings:{
             slidesToShow: 4,
+            centerPadding: '40px',
           }
         },
         {
           breakpoint:992,
           settings:{
             slidesToShow: 3,
+            centerPadding: '50px',
             centerMode: true,
           }
         },
@@ -166,6 +183,7 @@ $(document).ready(function() {
           breakpoint: 768,
           settings:{
             slidesToShow: 2,
+            centerPadding: '50px',
             centerMode: true,
           }
         },
@@ -173,6 +191,7 @@ $(document).ready(function() {
           breakpoint: 480,
           settings:{
             slidesToShow: 1,
+            centerPadding: '50px',
             centerMode: true,
           }
         },
